@@ -95,20 +95,21 @@ def update_availability(disciplinas):
 # === Search Functions ===
 
 def find_by_code(code, disciplinas):
-    """Find a course by its code"""
+    """Find all courses by code"""
     code = code.upper()
+    matches = []
     for d in disciplinas:
         if d.codigo.upper() == code:
-            return [d]
-    return []
+            matches.append(d)
+    return matches
 
 def fuzzy_search(query, disciplinas):
     """Find courses by name using fuzzy matching"""
-    query = query.lower()
+    query = query.upper()
     results = []
 
     for d in disciplinas:
-        name = d.name.lower()
+        name = d.name.upper()
         # Calculate a simple similarity score based on common substrings
         match_score = 0
         query_words = query.split()
@@ -184,7 +185,7 @@ def print_conflicts(disciplina, occupied_by):
     if not conflicts:
         return False
     
-    print(f"Conflitos detectados para '{disciplina.name}' ({disciplina.codigo}):")
+    print(f"Conflitos detectados para '{disciplina.name}' ({disciplina.codigo}) - Turma {disciplina.turma}:")
     
     for conflicting, slots in conflicts.items():
         slot_times = []
@@ -202,7 +203,7 @@ def print_conflicts(disciplina, occupied_by):
             time = f"{hour}:00"
             slot_times.append(f"{day} {period} {time}")
         
-        print(f"  → Conflito com '{conflicting.name}' ({conflicting.codigo})")
+        print(f"  → Conflito com '{conflicting.name}' ({conflicting.codigo}) - Turma {conflicting.turma}")
         print(f"    Horários conflitantes: {', '.join(slot_times)}")
     
     return True
@@ -233,6 +234,7 @@ def format_discipline_for_display(d, idx=None):
             f"{row_color}{idx}{Style.RESET_ALL}",
             f"{row_color}{orgao}{Style.RESET_ALL}",
             f"{row_color}{d.codigo}{Style.RESET_ALL}",
+            f"{row_color}{d.turma}{Style.RESET_ALL}",  # Added turma to display
             f"{row_color}{name}{Style.RESET_ALL}",
             f"{row_color}{docente}{Style.RESET_ALL}",
             f"{row_color}{d.horario}{Style.RESET_ALL}",
@@ -242,6 +244,7 @@ def format_discipline_for_display(d, idx=None):
         return [
             orgao,
             d.codigo,
+            d.turma,  # Added turma to display
             name,
             docente,
             d.horario,
@@ -252,7 +255,7 @@ def print_table(disciplinas):
     """Print a table of all disciplines"""
     sorted_list = sorted(disciplinas, key=lambda x: x.name.lower())
     
-    headers = ["#", "Curso", "Código", "Disciplina", "Docente", "Horário", "Status"]
+    headers = ["#", "Curso", "Código", "Turma", "Disciplina", "Docente", "Horário", "Status"]  # Added Turma header
     table_data = [format_discipline_for_display(d, i+1) for i, d in enumerate(sorted_list)]
     
     print(tabulate(table_data, headers=headers, tablefmt="simple"))
@@ -267,8 +270,8 @@ def print_results(disciplinas, title, show_numbers=True):
     print(f"\n{title}")
     print('-' * len(title))
     
-    headers = ["#", "Curso", "Código", "Disciplina", "Docente", "Horário", "Status"] if show_numbers else \
-              ["Curso", "Código", "Disciplina", "Docente", "Horário", "Status"]
+    headers = ["#", "Curso", "Código", "Turma", "Disciplina", "Docente", "Horário", "Status"] if show_numbers else \
+              ["Curso", "Código", "Turma", "Disciplina", "Docente", "Horário", "Status"]  # Added Turma header
     
     if show_numbers:
         table_data = [format_discipline_for_display(d, i+1) for i, d in enumerate(disciplinas)]
@@ -357,12 +360,19 @@ def handle_add_command(cmd_parts, disciplinas, sorted_list, selections_file):
     
     # Handle add by code
     if subcmd == '-c' and len(cmd_parts) >= 3:
-        code = cmd_parts[2].upper()
+        code = cmd_parts[2].lower()  # Case-insensitive code handling
         courses = find_by_code(code, disciplinas)
         if not courses:
             print(f"Código não encontrado: {code}")
             return
-        add_course(courses[0], disciplinas, selections_file)
+        
+        # If multiple sections found, let user select which one
+        if len(courses) > 1:
+            print(f"\nEncontradas {len(courses)} turmas para o código {code.upper()}:")
+            select_and_add_from_results(courses, f"Turmas para código {code.upper()}", 
+                                        disciplinas, selections_file)
+        else:
+            add_course(courses[0], disciplinas, selections_file)
     
     # Handle add by name (fuzzy search)
     elif subcmd == '-n' and len(cmd_parts) >= 3:
@@ -417,12 +427,46 @@ def handle_remove_command(cmd_parts, disciplinas, sorted_list, selections_file):
     
     # Handle remove by code
     if cmd_parts[1] == '-c' and len(cmd_parts) >= 3:
-        code = cmd_parts[2].upper()
+        code = cmd_parts[2].lower()  # Case-insensitive code handling
         courses = find_by_code(code, disciplinas)
         if not courses:
             print(f"Código não encontrado: {code}")
             return
-        d = courses[0]
+        
+        # If multiple sections found, let user select which one to remove
+        if len(courses) > 1:
+            selected_courses = [c for c in courses if c.selected]
+            
+            if not selected_courses:
+                print("Nenhuma turma deste código está no cronograma.")
+                return
+                
+            if len(selected_courses) == 1:
+                d = selected_courses[0]
+            else:
+                print(f"\nEncontradas {len(selected_courses)} turmas selecionadas para o código {code.upper()}:")
+                selected_courses = print_results(selected_courses, f"Turmas selecionadas para código {code.upper()}")
+                
+                print("\nSelecione uma disciplina para remover do cronograma")
+                print("Digite o número da disciplina ou 'c' para cancelar")
+                choice = input("> ").strip()
+                
+                if choice.lower() == 'c':
+                    return
+                    
+                try:
+                    idx = int(choice) - 1
+                    if 0 <= idx < len(selected_courses):
+                        d = selected_courses[idx]
+                    else:
+                        print("Índice inválido.")
+                        return
+                except ValueError:
+                    print("Entrada inválida.")
+                    return
+        else:
+            d = courses[0]
+            
         if d.selected:
             d.selected = False
             update_availability(disciplinas)
