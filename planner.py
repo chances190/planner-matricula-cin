@@ -16,7 +16,7 @@ from tabulate import tabulate
 
 # Default settings
 DEFAULT_CSV_FILE = "disciplinas.csv"
-DEFAULT_SELECTIONS_FILE = "selecoes.json"
+DEFAULT_SAVE_FILE = "selecoes.json"
 DAY_CODES = {'2': 'Segunda', '3': 'Terça', '4': 'Quarta', '5': 'Quinta', '6': 'Sexta', '7': 'Sábado'}
 
 
@@ -261,9 +261,9 @@ class DataFormatter:
 class CourseScheduler:
     """Core course scheduling functionality."""
     
-    def __init__(self, csv_file=DEFAULT_CSV_FILE, selections_file=DEFAULT_SELECTIONS_FILE):
+    def __init__(self, csv_file=DEFAULT_CSV_FILE, save_file=DEFAULT_SAVE_FILE):
         self.csv_file = csv_file
-        self.selections_file = selections_file
+        self.save_file = save_file
         self.disciplinas = []
         self.load_data()
         
@@ -282,9 +282,9 @@ class CourseScheduler:
             sys.exit(1)
         
         # Load selections
-        if os.path.exists(self.selections_file):
+        if os.path.exists(self.save_file):
             try:
-                with open(self.selections_file, 'r', encoding='utf-8') as sf:
+                with open(self.save_file, 'r', encoding='utf-8') as sf:
                     selected_names = json.load(sf)
                 for d in self.disciplinas:
                     if d.name in selected_names:
@@ -298,7 +298,7 @@ class CourseScheduler:
         """Save current selections to file."""
         selected = [d.name for d in self.disciplinas if d.selected]
         try:
-            with open(self.selections_file, 'w', encoding='utf-8') as sf:
+            with open(self.save_file, 'w', encoding='utf-8') as sf:
                 json.dump(selected, sf, ensure_ascii=False, indent=2)
         except Exception as e:
             print(f"Erro ao salvar seleções: {e}")
@@ -441,7 +441,7 @@ class CourseScheduler:
         return [d for score, d in results[:10] if score > 0.3]  # Apply a cutoff threshold
 
     def find_by_time_code(self, time_code):
-        """Find courses available for a specific time slot."""
+        """Find courses that have at least one class within the specified time slots."""
         # Parse the time code format (e.g., "2M123" -> day=2, period=M, hours=[1,2,3])
         pattern = re.compile(r"([2-7])([MTN])([1-6]+)")
         match = pattern.match(time_code)
@@ -452,23 +452,17 @@ class CourseScheduler:
         day_code, period, hours = match.groups()
         
         # Generate individual time slots from the pattern
-        time_slots = set()
-        for hour in hours:
-            time_slots.add(f"{day_code}{period}{hour}")
+        time_slots = set(f"{day_code}{period}{hour}" for hour in hours)
         
-        # Find courses that have ALL their classes for this day within the specified slots
+        # Find courses that have at least one class for this day within the specified slots
         result_courses = []
         
         for d in self.disciplinas:
             # Filter slots for the specified day
             day_slots = {slot for slot in d.slots if slot[0] == day_code}
             
-            # Skip if no classes on this day
-            if not day_slots:
-                continue
-                
-            # Check if all slots for this day are within the specified time slots
-            if day_slots.issubset(time_slots) and day_slots:  # Make sure it has at least one class in the range
+            # If any slot intersects the requested time_slots, include the course
+            if day_slots & time_slots:
                 result_courses.append(d)
         
         return result_courses, None
@@ -613,6 +607,8 @@ class ScheduleDisplay:
             schedule_data.append(row)
         
         # Print using tabulate
+        print("Cronograma")
+        print('-' * len("Cronograma"))
         print(tabulate(schedule_data, headers=['Hora'] + days, 
                       tablefmt="github", stralign="center"))
 
@@ -648,7 +644,7 @@ def main():
     # add command
     add_parser = subparsers.add_parser('add', help='Adiciona disciplina ao cronograma')
     add_parser.add_argument('--csv', '-c', default=DEFAULT_CSV_FILE, help=f'Arquivo CSV (padrão: {DEFAULT_CSV_FILE})')
-    add_parser.add_argument('--selections', '-s', default=DEFAULT_SELECTIONS_FILE, help=f'Arquivo de seleções (padrão: {DEFAULT_SELECTIONS_FILE})')
+    add_parser.add_argument('--savefile', '-s', default=DEFAULT_SAVE_FILE, help=f'Arquivo de seleções (padrão: {DEFAULT_SAVE_FILE})')
     add_subparsers = add_parser.add_subparsers(dest='add_type', help='Tipo de adição')
     
     add_code_parser = add_subparsers.add_parser('code', help='Adiciona por código')
@@ -660,7 +656,7 @@ def main():
     # remove command
     remove_parser = subparsers.add_parser('remove', help='Remove disciplina do cronograma')
     remove_parser.add_argument('--csv', '-c', default=DEFAULT_CSV_FILE, help=f'Arquivo CSV (padrão: {DEFAULT_CSV_FILE})')
-    remove_parser.add_argument('--selections', '-s', default=DEFAULT_SELECTIONS_FILE, help=f'Arquivo de seleções (padrão: {DEFAULT_SELECTIONS_FILE})')
+    remove_parser.add_argument('--savefile', '-s', default=DEFAULT_SAVE_FILE, help=f'Arquivo de seleções (padrão: {DEFAULT_SAVE_FILE})')
     remove_subparsers = remove_parser.add_subparsers(dest='remove_type', help='Tipo de remoção')
     
     remove_code_parser = remove_subparsers.add_parser('code', help='Remove por código')
@@ -669,7 +665,7 @@ def main():
     # schedule command
     schedule_parser = subparsers.add_parser('schedule', help='Mostra o cronograma')
     schedule_parser.add_argument('--csv', '-c', default=DEFAULT_CSV_FILE, help=f'Arquivo CSV (padrão: {DEFAULT_CSV_FILE})')
-    schedule_parser.add_argument('--selections', '-s', default=DEFAULT_SELECTIONS_FILE, help=f'Arquivo de seleções (padrão: {DEFAULT_SELECTIONS_FILE})')
+    schedule_parser.add_argument('--savefile', '-s', default=DEFAULT_SAVE_FILE, help=f'Arquivo de seleções (padrão: {DEFAULT_SAVE_FILE})')
     
     # Parse arguments
     args = parser.parse_args()
@@ -773,9 +769,8 @@ def main():
         if not selected_courses:
             print("Nenhuma disciplina selecionada no cronograma.")
         else:
-            print("\nDisciplinas no cronograma:")
             ScheduleDisplay.print_table(selected_courses, "Disciplinas selecionadas")
-            print("\nCronograma:")
+            print("")
             ScheduleDisplay.print_cronograma(scheduler.disciplinas)
 
 
