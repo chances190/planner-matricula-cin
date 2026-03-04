@@ -22,3 +22,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Egg-based installs
+*.egg-info/
