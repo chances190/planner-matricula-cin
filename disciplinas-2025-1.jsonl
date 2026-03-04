@@ -1,0 +1,145 @@
+{"orgao": "CC", "turma": "", "codigo": "CIN0130", "name": "SISTEMAS DIGITAIS", "docente": "Stefan Blawid", "horario": "4M34 6M56", "sala": "E112"}
+{"orgao": "CC", "turma": "", "codigo": "CIN0131", "name": "CONCEPCAO DE ARTEFATOS DIGITAIS", "docente": "Alex Sandro Gomes / Giordano Cabral", "horario": "2M56 6M34", "sala": "E112"}
+{"orgao": "CC", "turma": "", "codigo": "CIN0132", "name": "MATEMÁTICA DISCRETA", "docente": "Anjolina Grisi / Rodrigo Gabriel Ferreira Soares", "horario": "3M56 5M34", "sala": "D004"}
+{"orgao": "CC", "turma": "", "codigo": "CIN0133", "name": "INTRODUÇÃO À PROGRAMAÇÃO", "docente": "Ricardo Massa Ferreira Lima / Sérgio Soares / Fernanda Madeiral Delfim", "horario": "2M34 3M34 4M56 5M56", "sala": "Grad05"}
+{"orgao": "CC", "turma": "", "codigo": "CIN0134", "name": "ARQUITETURA DE COMPUTADORES E SISTEMAS OPERACIONAIS", "docente": "Andson Balieiro", "horario": "4T45 6T23", "sala": "E131"}
+{"orgao": "CC", "turma": "", "codigo": "CIN0135", "name": "ESTRUTURAS DE DADOS ORIENTADAS A OBJETOS", "docente": "Paulo Fonseca", "horario": "3T23 5T45", "sala": "Grad05"}
+{"orgao": "CC", "turma": "", "codigo": "CIN0136", "name": "DESENVOLVIMENTO DE SOFTWARE", "docente": "Fabio Silva / Paola Rodrigues de Godoy Accioly", "horario": "2T2345 3T45 5T23", "sala": "E233"}
+{"orgao": "CC", "turma": "E9", "codigo": "MA026", "name": "CALCULO DIFERENCIAL E INTEGRAL 1", "docente": "Docente Externo", "horario": "4M34", "sala": ""}
+{"orgao": "CC", "turma": "", "codigo": "IF673", "name": "LOGICA PARA COMPUTACAO", "docente": "Anjolina Grisi", "horario": "3T123 5T45", "sala": "D003"}
+{"orgao": "CC", "turma": "", "codigo": "FI582", "name": "FISICA PARA COMPUTACAO", "docente": "Eglanio José Pessoa da Silva Junior", "horario": "3T45 5T123", "sala": "D003"}
+{"orgao": "CC", "turma": "", "codigo": "CIN0142", "name": "ESTATÍSTICA E PROBABILIDADE PARA COMPUTAÇÃO", "docente": "Renata Souza", "horario": "4T45 6T23", "sala": "E122"}
+{"orgao": "CC", "turma": "", "codigo": "CIN0137", "name": "BANCO DE DADOS", "docente": "Valéria Cesário Times", "horario": "2M56 4M34", "sala": "D003"}
+{"orgao": "CC", "turma": "", "codigo": "CIN0138", "name": "ÁLGEBRA VETORIAL E LINEAR PARA COMPUTACÃO", "docente": "Paulo Salgado", "horario": "2M34 5M56", "sala": "D005"}
+{"orgao": "CC", "turma": "", "codigo": "CIN0139", "name": "INTEGRAÇÃO E EVOLUÇÃO DE SISTEMAS DE INFORMAÇÃO", "docente": "Kiev Gama / Cristiano Coelho de Araújo", "horario": "3M34 4M56 6M3456", "sala": "D005 Grad05"}
+{"orgao": "CC", "turma": "", "codigo": "CIN0140", "name": "ALGORITMOS", "docente": "Gustavo Carvalho", "horario": "3M56 5M34", "sala": "E131"}
+{"orgao": "CC", "turma": "", "codigo": "IF678", "name": "INFRA-ESTRUTURA DE COMUNICACAO", "docente": "Kelvin Lopes Dias", "horario": "3M34 5M56", "sala": "E122"}
+{"orgao": "CC", "turma": "", "codigo": "IF674", "name": "INFRA-ESTRUTURA DE HARDWARE", "docente": "Adriano Augusto de Moraes Sarmento", "horario": "3M56 5M34", "sala": "D002"}
+{"orgao": "CC", "turma": "", "codigo": "IF677", "name": "INFRA-ESTRUTURA DE SOFTWARE", "docente": "Carlos Ferraz", "horario": "4M56 6M34", "sala": "E121"}
+{"orgao": "CC", "turma": "", "codigo": "LE530", "name": "INGLES PARA COMPUTACAO", "docente": "Docente Externo", "horario": "2M3456", "sala": "E132"}
+{"orgao": "CC", "turma": "", "codigo": "IF682", "name": "ENGENHARIA SOFTWARE E SISTEMAS", "docente": "Breno Miranda", "horario": "3T123 5T45", "sala": "Grad04"}
+{"orgao": "CC", "turma": "", "codigo": "IF685", "name": "GERENCIAMENTO DADOS E INFORMACAO", "docente": "Valéria Cesário Times", "horario": "2T45 4T123", "sala": "D003"}
+{"orgao": "CC", "turma": "", "codigo": "IF689", "name": "INFORMATICA TEORICA", "docente": "Ruy de Queiroz", "horario": "4T45 6T123", "sala": "D005"}
+{"orgao": "CC", "turma": "", "codigo": "IF681", "name": "INTERFACES USUARIO-MAQUINA", "docente": "Alex Sandro Gomes / Filipe Calegário", "horario": "2T123", "sala": "E132"}
+{"orgao": "CC", "turma": "", "codigo": "IF680", "name": "PROCESSAMENTO GRAFICO", "docente": "Silvio Melo", "horario": "6T456", "sala": "D002"}
+{"orgao": "CC", "turma": "", "codigo": "IF684", "name": "SISTEMAS INTELIGENTES", "docente": "Ricardo Prudêncio / Cleber Zanchettin", "horario": "3T45 5T123", "sala": "Grad04"}
+{"orgao": "CC", "turma": "", "codigo": "IF690", "name": "HISTORIA E FUTURO DA COMPUTACAO", "docente": "Francisco de Assis Tenorio de Carvalho", "horario": "6M34", "sala": "E113"}
+{"orgao": "CC", "turma": "", "codigo": "IF687", "name": "INTRODUÇÃO A MULTIMIDIA", "docente": "Giordano Cabral", "horario": "4M56", "sala": "E233"}
+{"orgao": "CC", "turma": "", "codigo": "IF676", "name": "METODOL EXPRESSAO TEC-CIENTIFICA", "docente": "Patrícia Tedesco", "horario": "4M34 6M56", "sala": "E122"}
+{"orgao": "CC", "turma": "", "codigo": "IF686", "name": "PARADIGMAS LING.COMPUTACIONAIS", "docente": "Márcio Lopes Cornélio / Paulo Borba", "horario": "3M34 5M56", "sala": "Grad03"}
+{"orgao": "CC", "turma": "", "codigo": "IF683", "name": "PROJETO DE DESENVOLVIMENTO", "docente": "Geber Ramalho", "horario": "2M3456", "sala": "E233"}
+{"orgao": "CC", "turma": "", "codigo": "IF688", "name": "TEO.IMPLEMEN.LING. COMPUTACIONAIS", "docente": "Leopoldo Teixeira", "horario": "3M56 5M34", "sala": "Anfiteatro"}
+{"orgao": "CC", "turma": "", "codigo": "IF691", "name": "TRABALHO DE GRADUAÇÃO (Horário: 23456M1/7M23456)", "docente": "Anjolina Grisi", "horario": "", "sala": ""}
+{"orgao": "EC", "turma": "", "codigo": "CIN0001", "name": "INTRODUÇÃO À PROGRAMAÇÃO", "docente": "Juliano Iyoda", "horario": "2M56 5M34", "sala": "Grad05"}
+{"orgao": "EC", "turma": "", "codigo": "CIN0002", "name": "LABORATÓRIO DE PROGRAMAÇÃO 1", "docente": "Juliano Iyoda", "horario": "3M56", "sala": "Grad05"}
+{"orgao": "EC", "turma": "", "codigo": "CIN0003", "name": "INTRODUÇÃO À COMPUTAÇÃO", "docente": "Adriano Lorena Inácio de Oliveira", "horario": "4M56", "sala": "E132"}
+{"orgao": "Área 2", "turma": "E10", "codigo": "MA036", "name": "GEOMETRIA ANALÍTICA", "docente": "Docente Externo", "horario": "3M34", "sala": ""}
+{"orgao": "Área 2", "turma": "P5", "codigo": "MA026", "name": "CALCULO DIFERENCIAL E INTEGRAL 1", "docente": "Docente Externo", "horario": "4M34", "sala": ""}
+{"orgao": "EC", "turma": "", "codigo": "CIN0004", "name": "FUNDAMENTOS DE ÁLGEBRA LINEAR", "docente": "Silvio Melo", "horario": "3T23 6T23", "sala": "E132"}
+{"orgao": "EC", "turma": "", "codigo": "CIN0005", "name": "FUNDAMENTOS DE PROGRAMAÇÃO IMPERATIVA", "docente": "Alexandre Cabral Mota", "horario": "2T23 4T45", "sala": "Grad05"}
+{"orgao": "EC", "turma": "", "codigo": "CIN0006", "name": "LABORATÓRIO DE PROGRAMAÇÃO 2", "docente": "Alexandre Cabral Mota", "horario": "2T45", "sala": "Grad05"}
+{"orgao": "EC", "turma": "", "codigo": "CIN0007", "name": "SISTEMAS DIGITAIS", "docente": "Abel Guilhermino da Silva Filho", "horario": "3T45 5T23", "sala": "D002"}
+{"orgao": "EC", "turma": "", "codigo": "CIN0008", "name": "LABORATÓRIO DE SISTEMAS DIGITAIS", "docente": "Abel Guilhermino da Silva Filho / Victor Wanderley Costa de Medeiros", "horario": "5T45", "sala": "Lab Hardw"}
+{"orgao": "Área 2", "turma": "S4", "codigo": "MA027", "name": "CALCULO DIFERENCIAL E INTEGRAL 2", "docente": "Docente Externo", "horario": "4T23", "sala": ""}
+{"orgao": "EC", "turma": "", "codigo": "CIN0009", "name": "ALGORITMOS E ESTRUTURAS DE DADOS", "docente": "Fernando Maciano de Paula Neto", "horario": "3M34 5M56", "sala": "D003"}
+{"orgao": "EC", "turma": "", "codigo": "CIN0010", "name": "MATEMÁTICA DISCRETA PARA COMPUTAÇÃO", "docente": "Nivan Ferreira", "horario": "3M56 5M34", "sala": "D003"}
+{"orgao": "EC", "turma": "", "codigo": "CIN0011", "name": "ORGANIZAÇÃO E ARQUITETURA DE COMPUTADORES", "docente": "Edna Barros", "horario": "3T23 5T45", "sala": "D005"}
+{"orgao": "EC", "turma": "", "codigo": "CIN0012", "name": "LABORATÓRIO DE ORGANIZAÇÃO E ARQUITETURA DE COMPUTADORES", "docente": "Edna Barros / Victor Wanderley Costa de Medeiros", "horario": "4T45", "sala": "Lab Hardw"}
+{"orgao": "Área 2", "turma": "P5", "codigo": "FI006", "name": "FISICA GERAL 1", "docente": "Docente Externo", "horario": "2M34", "sala": ""}
+{"orgao": "Área 2", "turma": "T1", "codigo": "MA128", "name": "CALCULO DIFERENCIAL E INTEGRAL 3", "docente": "Docente Externo", "horario": "2M34", "sala": ""}
+{"orgao": "Área 2", "turma": "T7", "codigo": "MA128", "name": "CALCULO DIFERENCIAL E INTEGRAL 3", "docente": "Docente Externo", "horario": "2M56", "sala": ""}
+{"orgao": "Área 2", "turma": "S3", "codigo": "FI007", "name": "FISICA GERAL 2", "docente": "Docente Externo", "horario": "2T23", "sala": ""}
+{"orgao": "EC", "turma": "", "codigo": "IF677", "name": "INFRA-ESTRUTURA DE SOFTWARE", "docente": "Eduardo Tavares", "horario": "3M34 5M56", "sala": "E232"}
+{"orgao": "EC", "turma": "", "codigo": "ET586", "name": "ESTATIST PROBABILIDADE COMPUTACAO", "docente": "Jamilson Ramalho Dantas", "horario": "3T45 5T123", "sala": "D004"}
+{"orgao": "Área 2", "turma": "Y6", "codigo": "FI021", "name": "FISICA EXPERIMENTAL 1", "docente": "Docente Externo", "horario": "6M34", "sala": ""}
+{"orgao": "Área 2", "turma": "Y7", "codigo": "FI021", "name": "FISICA EXPERIMENTAL 1", "docente": "Docente Externo", "horario": "6M34", "sala": ""}
+{"orgao": "Área 2", "turma": "Y8", "codigo": "FI021", "name": "FISICA EXPERIMENTAL 1", "docente": "Docente Externo", "horario": "6M34", "sala": ""}
+{"orgao": "Área 2", "turma": "Y9", "codigo": "FI021", "name": "FISICA EXPERIMENTAL 1", "docente": "Docente Externo", "horario": "6M34", "sala": ""}
+{"orgao": "Área 2", "turma": "T1/T3/T2/T4", "codigo": "FI108", "name": "FISICA GERAL 3", "docente": "Docente Externo", "horario": "2M56", "sala": ""}
+{"orgao": "Área 2", "turma": "T6/T7/T8", "codigo": "FI108", "name": "FISICA GERAL 3", "docente": "Docente Externo", "horario": "2M34", "sala": ""}
+{"orgao": "EC", "turma": "", "codigo": "IF685", "name": "GERENCIAMENTO DADOS E INFORMACAO", "docente": "Robson Fidalgo", "horario": "2T145 4T45", "sala": "E112"}
+{"orgao": "EC", "turma": "", "codigo": "IF816", "name": "MET. NUMERICOS COMPUTACIONAIS", "docente": "Stefan Blawid", "horario": "3T123 5T45", "sala": "D004"}
+{"orgao": "EC", "turma": "", "codigo": "IF817", "name": "INTERFACE HARDWARE-SOFTWARE", "docente": "Andson Balieiro", "horario": "2T23 4T23 6T1", "sala": "E112"}
+{"orgao": "Eng. Eletrônica e Sistemas", "turma": "ECBIO", "codigo": "EL390", "name": "CIRCUITOS ELETRICOS 1", "docente": "Docente Externo", "horario": "3T23 5T23", "sala": "Anfiteatro do DES (4º andar do CTG"}
+{"orgao": "Eng. Controle Automação", "turma": "01A", "codigo": "EL398", "name": "LABORATÓRIO DE CIRCUITOS ELÉTRICOS 1", "docente": "Docente Externo", "horario": "2M34", "sala": ""}
+{"orgao": "Eng. Controle Automação", "turma": "02A", "codigo": "EL398", "name": "LABORATÓRIO DE CIRCUITOS ELÉTRICOS 1", "docente": "Docente Externo", "horario": "2M56", "sala": ""}
+{"orgao": "Eng. Controle Automação", "turma": "03A", "codigo": "EL398", "name": "LABORATÓRIO DE CIRCUITOS ELÉTRICOS 1", "docente": "Docente Externo", "horario": "5M34", "sala": ""}
+{"orgao": "Eng. Controle Automação", "turma": "04A", "codigo": "EL398", "name": "LABORATÓRIO DE CIRCUITOS ELÉTRICOS 1", "docente": "Docente Externo", "horario": "5M56", "sala": ""}
+{"orgao": "Eng. Controle Automação", "turma": "05A", "codigo": "EL398", "name": "LABORATÓRIO DE CIRCUITOS ELÉTRICOS 1", "docente": "Docente Externo", "horario": "6T23", "sala": ""}
+{"orgao": "Eng. Controle Automação", "turma": "06A", "codigo": "EL398", "name": "LABORATÓRIO DE CIRCUITOS ELÉTRICOS 1", "docente": "Docente Externo", "horario": "6T45", "sala": ""}
+{"orgao": "EC", "turma": "", "codigo": "IF690", "name": "HISTORIA E FUTURO DA COMPUTACAO", "docente": "Germano Vasconcelos", "horario": "3M56 3T1", "sala": "D005"}
+{"orgao": "EC", "turma": "", "codigo": "IF678", "name": "INFRA-ESTRUTURA DE COMUNICACAO", "docente": "Renato Mariz", "horario": "3M34 6M34", "sala": "D004"}
+{"orgao": "EC", "turma": "", "codigo": "IF686", "name": "PARADIGMAS LING.COMPUTACIONAIS", "docente": "André Luís de Medeiros Santos", "horario": "2M34 4M56", "sala": "Grad03"}
+{"orgao": "EC", "turma": "", "codigo": "ES413", "name": "SINAIS SISTEMAS P/ENG. COMPUTACAO", "docente": "Aluízio Fausto Ribeiro Araújo", "horario": "4M34 6M56", "sala": "D002"}
+{"orgao": "EC", "turma": "", "codigo": "ES203", "name": "ELETROMAGNETISMO 1", "docente": "Odilon Maroja da Costa Pereira Filho", "horario": "3T123 5T45", "sala": "E131"}
+{"orgao": "EC", "turma": "", "codigo": "IF682", "name": "ENGENHARIA SOFTWARE E SISTEMAS", "docente": "Breno Miranda / Paulo Borba", "horario": "3T45 5T123", "sala": "Grad03"}
+{"orgao": "EC", "turma": "", "codigo": "IF689", "name": "INFORMATICA TEORICA", "docente": "Ruy de Queiroz", "horario": "2T23 4T23", "sala": "D005"}
+{"orgao": "EC", "turma": "", "codigo": "LE530", "name": "INGLES PARA COMPUTACAO", "docente": "Docente Externo", "horario": "2M3456", "sala": "E132"}
+{"orgao": "EngEletronica", "turma": "", "codigo": "ES232", "name": "INTRODUCAO DISPOS SEMICONDUTORES", "docente": "Docente Externo", "horario": "4M56", "sala": ""}
+{"orgao": "EC", "turma": "", "codigo": "ES238", "name": "ELETRONICA 1", "docente": "Adrien", "horario": "2M34 5M56", "sala": "E131"}
+{"orgao": "EC", "turma": "", "codigo": "ES344", "name": "PRINCIPIOS DE COMUNICACAO", "docente": "Daniel Cunha", "horario": "4M56 6M34", "sala": "E131"}
+{"orgao": "EC", "turma": "", "codigo": "ES414", "name": "SERVOMECANISMO P/ ENG. COMPUTACAO", "docente": "Carlos Alexandre Barros de Mello", "horario": "2M56 2T1 4M34", "sala": "E131"}
+{"orgao": "EC", "turma": "", "codigo": "IF684", "name": "SISTEMAS INTELIGENTES", "docente": "Germano Vasconcelos / Filipe Calegário", "horario": "3M34 6M56", "sala": "E131"}
+{"orgao": "EC", "turma": "", "codigo": "IF688", "name": "TEO.IMPLEMEN.LING. COMPUTACIONAIS", "docente": "Leopoldo Teixeira", "horario": "3M56 5M34", "sala": "Anfiteatro"}
+{"orgao": "EC", "turma": "", "codigo": "IF676", "name": "METODOL EXPRESSAO TEC-CIENTIFICA", "docente": "George Darmiton", "horario": "4M34 6M56", "sala": "E233"}
+{"orgao": "EC", "turma": "", "codigo": "IF822", "name": "PROJETO CO-DESENV. HARD-SOFTWARE", "docente": "Cristiano Coelho de Araújo", "horario": "2M3456", "sala": "E233"}
+{"orgao": "EC", "turma": "", "codigo": "IF813", "name": "TRABALHO DE GRADUACAO", "docente": "Divanilson Rodrigo de Sousa Campelo", "horario": "7M23456", "sala": ""}
+{"orgao": "SI", "turma": "", "codigo": "CIN0130", "name": "SISTEMAS DIGITAIS", "docente": "Cristiano Coelho de Araújo / Victor Wanderley Costa de Medeiros", "horario": "3N1234 5N1234", "sala": "E132"}
+{"orgao": "SI", "turma": "", "codigo": "CIN0131", "name": "CONCEPCAO DE ARTEFATOS DIGITAIS", "docente": "Luiz Augusto Morais", "horario": "2N12 2T6 4N1234", "sala": "E131"}
+{"orgao": "SI", "turma": "", "codigo": "CIN0132", "name": "MATEMÁTICA DISCRETA", "docente": "Pedro Machado Manhães de Castro", "horario": "3N12 3T6 5N12 5T6", "sala": "E233"}
+{"orgao": "SI", "turma": "", "codigo": "CIN0133", "name": "INTRODUÇÃO À PROGRAMAÇÃO", "docente": "Sérgio Soares / Ricardo Massa Ferreira Lima / Fernanda Madeiral Delfim", "horario": "2N1234 4N12 4T6 6N1234 6T6", "sala": "Grad05 Grad01"}
+{"orgao": "SI", "turma": "", "codigo": "AD431", "name": "ADMINISTRAÇÃO CONTEMPORÂNEA", "docente": "Docente Externo", "horario": "3N12 3T6 5N1234", "sala": "E113"}
+{"orgao": "SI", "turma": "", "codigo": "CIN0134", "name": "ARQUITETURA DE COMPUTADORES E SISTEMAS OPERACIONAIS", "docente": "Sérgio Vanderlei Cavalcante", "horario": "2N12 2T6 4N1234", "sala": "E233"}
+{"orgao": "SI", "turma": "", "codigo": "CIN0135", "name": "ESTRUTURAS DE DADOS ORIENTADAS A OBJETOS", "docente": "Francisco Paulo Magalhães Simões", "horario": "3N1234 6N12 6T6", "sala": "Grad05"}
+{"orgao": "SI", "turma": "", "codigo": "CIN0136", "name": "DESENVOLVIMENTO DE SOFTWARE", "docente": "Kiev Gama / David Junio Mota Cavalcanti", "horario": "2N1234 3N12 3T6 5N1234 5T6", "sala": "E233 Grad05"}
+{"orgao": "SI", "turma": "20", "codigo": "MA026", "name": "CALCULO DIFERENCIAL E INTEGRAL 1", "docente": "Docente Externo", "horario": "4N12 4T6 6N1234", "sala": "E131"}
+{"orgao": "SI", "turma": "", "codigo": "AD291", "name": "ANÁLISE DAS ORGANIZACOES", "docente": "Claudemir Inacio dos Santos", "horario": "3N1234 5N12 5T6", "sala": "E121"}
+{"orgao": "SI", "turma": "", "codigo": "IF971", "name": "ESTATÍSTICA E PROBABILIDADE PARA COMPUTAÇÃO", "docente": "Maíra Araújo de Santana", "horario": "2N1234 4N12 4T6", "sala": "E232"}
+{"orgao": "SI", "turma": "", "codigo": "LE732", "name": "INGLÊS PARA COMPUTAÇÃO", "docente": "Docente Externo", "horario": "6N1234 6T6", "sala": "E231"}
+{"orgao": "SI", "turma": "", "codigo": "IF972", "name": "LÓGICA PARA COMPUTAÇÃO", "docente": "Fred Freitas", "horario": "2N12 2T6 4N1234", "sala": "E132"}
+{"orgao": "SI", "turma": "", "codigo": "CIN0139", "name": "INTEGRAÇÃO E EVOLUÇÃO DE SISTEMAS DE INFORMAÇÃO", "docente": "Juscimara Gomes Avelino / David Junio Mota Cavalcanti", "horario": "2N12 2T6 4N1234 6N1234 6T6", "sala": "Grad05 Grad02"}
+{"orgao": "SI", "turma": "", "codigo": "CIN0137", "name": "BANCO DE DADOS", "docente": "Flávio Arthur Oliveira Santos", "horario": "2N1234 4N12 4T6", "sala": "E132"}
+{"orgao": "SI", "turma": "", "codigo": "CIN0140", "name": "ALGORITMOS", "docente": "Patrícia Tedesco", "horario": "3N12 3T6 5N12 5T6", "sala": "Grad03"}
+{"orgao": "SI", "turma": "", "codigo": "CIN0138", "name": "ÁLGEBRA VETORIAL E LINEAR PARA COMPUTACÃO", "docente": "Pedro Machado Manhães de Castro", "horario": "3N1234 5N1234", "sala": "E233"}
+{"orgao": "SI", "turma": "", "codigo": "AD193", "name": "COMPORTAMENTO ORGANIZACIONAL", "docente": "Claudemir Inacio dos Santos", "horario": "3N12 3T6 5N1234", "sala": "E122"}
+{"orgao": "SI", "turma": "", "codigo": "CT503", "name": "CONTABILIDADE DE CUSTOS E GERENCIAL", "docente": "Marcelo Jota Gomes", "horario": "4N12 4T6 6N1234", "sala": "E113"}
+{"orgao": "SI", "turma": "", "codigo": "IF973", "name": "FUNDAMENTOS DE SISTEMAS DE INFORMAÇÃO", "docente": "Hermano Perrelli de Moura", "horario": "2N1234 6N12 6T6", "sala": "E131"}
+{"orgao": "SI", "turma": "", "codigo": "IF975", "name": "REDES DE COMPUTADORES", "docente": "Paulo Freitas Araújo Filho", "horario": "3N1234 5N12 5T6", "sala": "E231"}
+{"orgao": "SI", "turma": "", "codigo": "IF977", "name": "ENGENHARIA DE SOFTWARE", "docente": "Vinicius Cardoso Garcia", "horario": "2N12 2T6 4N1234", "sala": "Grad02"}
+{"orgao": "SI", "turma": "", "codigo": "IF978", "name": "GESTÃO DE PROCESSOS DE NEGÓCIO", "docente": "Jéssyka Vilela", "horario": "3N12 3T6 5N1234", "sala": "E112"}
+{"orgao": "SI", "turma": "", "codigo": "IF979", "name": "PLANEJAMENTO E GERENCIAMENTO DE PROJETOS", "docente": "Alexandre Marcos Lins de Vasconcelos", "horario": "6N1234 6T6", "sala": "E122"}
+{"orgao": "SI", "turma": "", "codigo": "IF980", "name": "SISTEMAS DE GESTÃO EMPRESARIAL", "docente": "Alexandre Marcos Lins de Vasconcelos", "horario": "3N1234 5N12 5T6", "sala": "E232"}
+{"orgao": "SI", "turma": "", "codigo": "IF982", "name": "GESTÃO DA INFORMAÇÃO E DO CONHECIMENTO", "docente": "Paulemir Gonçalves Campos", "horario": "2N1234 5N12 5T6", "sala": "E112"}
+{"orgao": "SI", "turma": "", "codigo": "CO691", "name": "COMUNICAÇÃO TÉCNICA E CIENTÍFICA", "docente": "Caio Bruno Bezerra de Souza", "horario": "3N12 3T6 4N1234", "sala": "E232"}
+{"orgao": "SI", "turma": "", "codigo": "IF983", "name": "SISTEMAS DE APOIO À DECISÃO", "docente": "Adiel Teixeira de Almeida Filho", "horario": "2N12 2T6 5N1234", "sala": "Grad01"}
+{"orgao": "SI", "turma": "", "codigo": "IF985", "name": "PROJETO DE SISTEMA DE INFORMAÇÃO", "docente": "Giordano Cabral", "horario": "2N12 2T6 5N1234", "sala": "Grad03"}
+{"orgao": "SI", "turma": "", "codigo": "IF986", "name": "VIABILIDADE ECONÔMICO-FINANCEIRA DE PROJETOS DE SI", "docente": "José Carlos Cavalcanti", "horario": "4N1234 6N12 6T6", "sala": "E112"}
+{"orgao": "SI", "turma": "", "codigo": "IF987", "name": "AUDITORIA E SEGURANÇA DE SISTEMAS DE INFORMAÇÃO", "docente": "Carla Silva Schuenemann", "horario": "3N12 3T6 5N1234", "sala": "Grad02"}
+{"orgao": "SI", "turma": "", "codigo": "AD432", "name": "ESTRATÉGIA E PLANEJAMENTO", "docente": "Docente Externo", "horario": "3N1234 5N12 5T6", "sala": "E113"}
+{"orgao": "SI", "turma": "", "codigo": "IF988", "name": "EMPREENDIMENTOS EM INFORMÁTICA", "docente": "Paulo Adeodato", "horario": "2N1234 2T6", "sala": "E113"}
+{"orgao": "SI", "turma": "", "codigo": "IF989", "name": "TENDÊNCIAS E DESAFIOS EM SISTEMAS DE INFORMAÇÃO", "docente": "Jéssyka Vilela", "horario": "3N1234 5N12 5T6", "sala": "E122"}
+{"orgao": "SI", "turma": "", "codigo": "IF990", "name": "TRABALHO DE CONCLUSÃO DE CURSO EM SISTEMAS DE INFORMAÇÃO", "docente": "Filipe Calegário", "horario": "7M23456", "sala": ""}
+{"orgao": "Área 2", "turma": "E9", "codigo": "MA026", "name": "CALCULO DIFERENCIAL E INTEGRAL 1", "docente": "Docente Externo", "horario": "4M34", "sala": ""}
+{"orgao": "IA", "turma": "", "codigo": "CIN0999", "name": "INTRODUÇÃO À INTELIGÊNCIA ARTIFICIAL", "docente": "Tsang Ing Ren", "horario": "2M56 5M34", "sala": "E113"}
+{"orgao": "IA", "turma": "", "codigo": "CIN0132", "name": "MATEMÁTICA DISCRETA", "docente": "Adenilton José da Silva", "horario": "3M56 6M34", "sala": "E232"}
+{"orgao": "IA", "turma": "", "codigo": "CIN0133", "name": "INTRODUÇÃO À PROGRAMAÇÃO", "docente": "Fernanda Madeiral Delfim / Ricardo Massa Ferreira Lima / Sérgio Soares", "horario": "2M34 3M34 4M56 5M56", "sala": "Grad05"}
+{"orgao": "Área 2", "turma": "F1", "codigo": "IF165", "name": "COMPUTAÇÃO ELETRÔNICA", "docente": "Clarisse Lins de Lima", "horario": "3T45", "sala": ""}
+{"orgao": "Área 2", "turma": "F2", "codigo": "IF165", "name": "COMPUTAÇÃO ELETRÔNICA", "docente": "Ismael Cesar da Silva Araujo", "horario": "3T45", "sala": ""}
+{"orgao": "Área 2", "turma": "F3", "codigo": "IF165", "name": "COMPUTAÇÃO ELETRÔNICA", "docente": "Ismael Cesar da Silva Araujo", "horario": "3T23", "sala": ""}
+{"orgao": "Área 2", "turma": "F4", "codigo": "IF165", "name": "COMPUTAÇÃO ELETRÔNICA", "docente": "Juan Alberto Rojas Tueros", "horario": "3T23", "sala": ""}
+{"orgao": "Área 2", "turma": "S1", "codigo": "IF165", "name": "COMPUTAÇÃO ELETRÔNICA", "docente": "Juan Alberto Rojas Tueros", "horario": "3T45", "sala": ""}
+{"orgao": "Área 2", "turma": "S2", "codigo": "IF165", "name": "COMPUTAÇÃO ELETRÔNICA", "docente": "Caio Bruno Bezerra de Souza", "horario": "3T45", "sala": ""}
+{"orgao": "Área 2", "turma": "S3", "codigo": "IF165", "name": "COMPUTAÇÃO ELETRÔNICA", "docente": "Caio Bruno Bezerra de Souza", "horario": "3T23", "sala": ""}
+{"orgao": "Área 2", "turma": "S5", "codigo": "IF165", "name": "COMPUTAÇÃO ELETRÔNICA", "docente": "Clarisse Lins de Lima", "horario": "3T23", "sala": ""}
+{"orgao": "Área 2", "turma": "E8", "codigo": "IF165", "name": "COMPUTAÇÃO ELETRÔNICA", "docente": "Juscimara Gomes Avelino", "horario": "3M56", "sala": ""}
+{"orgao": "Área 2", "turma": "T1", "codigo": "IF215", "name": "CÁLCULO NUMÉRICO", "docente": "Juan Alberto Rojas Tueros", "horario": "3M34", "sala": ""}
+{"orgao": "Área 2", "turma": "T3", "codigo": "IF215", "name": "CÁLCULO NUMÉRICO", "docente": "Clarisse Lins de Lima", "horario": "3M34", "sala": ""}
+{"orgao": "Área 2", "turma": "T4", "codigo": "IF215", "name": "CÁLCULO NUMÉRICO", "docente": "Davi Hirafuji Neiva", "horario": "3M34", "sala": ""}
+{"orgao": "Área 2", "turma": "T5", "codigo": "IF215", "name": "CÁLCULO NUMÉRICO", "docente": "Davi Hirafuji Neiva", "horario": "3M56", "sala": ""}
+{"orgao": "Área 2", "turma": "T6", "codigo": "IF215", "name": "CÁLCULO NUMÉRICO", "docente": "Clarisse Lins de Lima", "horario": "3M56", "sala": ""}
+{"orgao": "Área 2", "turma": "T7", "codigo": "IF215", "name": "CÁLCULO NUMÉRICO", "docente": "Juan Alberto Rojas Tueros", "horario": "3M56", "sala": ""}
+{"orgao": "Ciências Atuariais", "turma": "", "codigo": "IF963", "name": "PROGRAMAÇÃO 1A", "docente": "Ismael Cesar da Silva Araujo", "horario": "4T34", "sala": ""}
+{"orgao": "Ciências Atuariais", "turma": "", "codigo": "IF685", "name": "GERENCIAMENTO DE DADOS E INFORMAÇÕES", "docente": "Paulemir Gonçalves Campos", "horario": "4T34", "sala": ""}
+{"orgao": "Lic. Matemática", "turma": "2Z", "codigo": "IF663", "name": "COMPUTAÇÃO L", "docente": "Paulemir Gonçalves Campos", "horario": "5N1234", "sala": ""}
+{"orgao": "Estatística", "turma": "", "codigo": "IF757", "name": "ESTRUTURAS  E ALGORITMOS", "docente": "Ismael Cesar da Silva Araujo", "horario": "3M56", "sala": ""}
+{"orgao": "Lic Expressão Gráfica", "turma": "", "codigo": "IF965", "name": "INTRODUÇÃO A PROGRAMAÇÃO", "docente": "Paulemir Gonçalves Campos", "horario": "6M34", "sala": ""}
